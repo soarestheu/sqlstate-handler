@@ -1,0 +1,22 @@
+{
+  "name": "soarestheu/sqlstate-handler",
+  "description": "Pacote para tratamento de erros SQLSTATE no Laravel.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+      "psr-4": {
+          "SqlstateHandler\\": "src/"
+      }
+  },
+  "require": {
+    "php": ">=7.3",
+    "illuminate/database": "^7.0|^8.0|^9.0|^10.0"
+  },
+  "extra": {
+      "laravel": {
+          "providers": [
+              "SqlstateHandler\\SqlstateServiceProvider"
+          ]
+      }
+  }
+}
